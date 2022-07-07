@@ -1,0 +1,5 @@
+<!--pages/like/index.wxml-->
+<view class="container">
+  <image src="{{like? yesSrc:noSrc}}" class="container image"></image>
+  <text class="container text">{{count}}</text>
+</view>
