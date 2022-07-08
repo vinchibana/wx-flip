@@ -3,6 +3,8 @@
     "v-like": "/components/like/index",
     "v-movie": "/components/classic/movie/index",
     "v-episode": "/components/classic/episode/index",
-    "v-navi": "/components/navi/index"
+    "v-navi": "/components/navi/index",
+    "v-music": "/components/classic/music/index",
+    "v-essay": "/components/classic/essay/index"
   }
 }

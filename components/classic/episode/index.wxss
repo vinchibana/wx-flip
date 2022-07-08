@@ -39,5 +39,5 @@
 }
 
 .year {
-    font-size: 20rpx;
+    font-size: 24rpx;
 }
