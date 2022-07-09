@@ -1,4 +1,4 @@
-<view class="container">
+<view bindtap="onTap" class="container">
   <text>{{text}}</text>
   <text>{{num}}</text>
   <slot name="after"></slot>

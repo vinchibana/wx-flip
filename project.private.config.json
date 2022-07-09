@@ -9,9 +9,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "book-detail",
-          "pathName": "pages/book-detail/book-detail",
-          "query": "bid=1120",
+          "name": "book",
+          "pathName": "pages/book/book",
+          "query": "",
           "launchMode": "default",
           "scene": null
         }

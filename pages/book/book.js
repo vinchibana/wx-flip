@@ -1,11 +1,13 @@
 import {BookModel} from "../../models/book";
-
+import {random} from "../../utils/common";
 let bookModel = new BookModel()
 
 Page({
 
   data: {
-    books: Object
+    books: Object,
+    searching: false,
+    more: false
   },
 
   onLoad(options) {
@@ -16,4 +18,21 @@ Page({
     })
   },
 
+  onSearching(event) {
+    this.setData({
+      searching: true
+    })
+  },
+
+  onCancel(event) {
+    this.setData({
+      searching: false
+    })
+  },
+
+  onReachBottom(event) {
+    this.setData({
+      more: random(16)
+    })
+  }
 })

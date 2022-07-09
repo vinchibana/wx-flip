@@ -43,6 +43,25 @@ class BookModel extends HTTP {
     }
     this.request(params)
   }
+
+  postComment(bid, comment, success) {
+    let params = {
+      url: 'book/add/short_comment',
+      success: success,
+      method: 'POST',
+      data: {
+        book_id: bid,
+        content: comment
+      },
+      error: (err) => {
+        wx.showToast({
+          title: '评论失败'
+        })
+      }
+    }
+    this.request(params)
+  }
+
 }
 
 export {BookModel}
